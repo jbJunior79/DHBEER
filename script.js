@@ -24,4 +24,4 @@ var imgArr = document.getElementById('imgContainer').getElementsByTagName('img')
   index++; 
 }
 
-setInterval(slide,1000); 
+setInterval(slide,5000); 

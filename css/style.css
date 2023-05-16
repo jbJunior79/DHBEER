@@ -21,13 +21,44 @@ body {
     margin-left: 300px;
     /*coloca o item mesmo estando na body no topo da página */
     position: absolute;
-    top: 0;
+    top: 0;   
+}
+
+/* botao menu de cervejas Inicio*/
+.mainmenu {  
+    color: rgb(79, 2, 114);
+    text-decoration-line: underline;
+    cursor: pointer;
+    padding:20px;
     
 }
 
-.carousel-item active {
-    max-width: 1400px;
+.mainmenu:hover {
+    background-color: transparent;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
+
+.submenu {
+    position: absolute;
+    z-index: 3;
+    width: 13vh;
+    display: none;
+    background: linear-gradient(30.15deg, #ffbf00 16.62%, #ffffff 85.61%)  ;
+}
+
+.submenu a{
+    text-transform:capitalize;
+    text-decoration: none;
+   color: black;
+}
+.dropdown:hover .submenu {
+    display: block;  
+}
+/* botao menu de cervejas Fim*/
 
 .menu-list li {
     margin-right: 70px; /* para adicionar espaço entre os itens */
@@ -48,7 +79,7 @@ h1 {
     font-family: 'Verdana', sans-serif;
     font-size: 60px;
     text-align: center;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     margin-top: 230px;
 }
@@ -64,6 +95,27 @@ p {
     
 }
 
+.bkheader {
+    width: 100%;
+    height: 400px;
+    
+
+}
+
+#imgContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* o container de imagens ocupará toda a largura da tela*/
+    height: 400px; /* 400 pixels de altura */
+    overflow: hidden; /* esconde a parte da imagem que ultrapassar o tamanho ou a altura desse container*/
+  }
+  #imgContainer img {
+    /* adicionando efeitos para as imagens que estão dentro do container*/
+    width: 100%; /*ocupará toda a largura do container*/
+    height: 100%; /*ocupará toda a altura do container*/
+    display: inline-block; /* organiza as imagens em linha*/
+  }
+
 footer {
     color: black;
     background-color: #c24729;
@@ -71,11 +123,7 @@ footer {
     margin-top: 20px;
 }
 
-.bkheader {
-    width: 100%;
-    height: 400px;
 
-}
 
 .btnwhats {
     width: 50px;
@@ -88,6 +136,7 @@ footer {
 }
 
 .pulse {
+
     position: fixed;
     width: 30px;
     height: 30px;
