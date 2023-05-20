@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script> src="dhbeer/script.js"</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js"></script>
     <title>DH Beer - Cervejaria Artesanal</title>
 </head>
+
 <header>
     <img src="img/LOGO.png" alt="" class="logo">
-        <h1>Não deixe para amanhã a cerveja que você pode beber hoje!</h1>
+    <h1>Não deixe para amanhã a cerveja que você pode beber hoje!</h1>
     <img src="img/background.jpg" alt="" class="bkheader">
-
 </header>
+
 <body>
+    <div class="popup" id="popup">
+        <h4>Para continuar navegando nesse site você deve ter mais de 18 anos. Você é maior de 18?</h4>
+        <div class="buttons">
+            <button onclick="fecharPopup()">SIM</button>
+            <button onclick="redirecionar()">NÃO</button>
+        </div>
+    </div>
+
     <ul class="menu-list">
         <li class="active">
+            <a href="">A Cervejaria DH</a><li >
+                <div class="dropdown"> 
+                    <a class="mainmenu">Nossos Produtos</a>
+                    <div class="submenu">
+                      <a href="">Ipa    </a>
+                      <a href="">Lager  </a>
+                      <a href="">Amber  </a>
+                      <a href="/pilsen.html">Pilsen </a>
+                      <a href="">DhZero </a>
+                      <a href="">Stout  </a>
+                      <a href="">RedAle </a>
+                      <a href="">Weiss  </a>
+                    </div>
+                  </div>
+            </li>
             <a href="">A Cervejaria DH</a>
         </li>
         <li >
@@ -46,24 +71,19 @@
         <li>
             <a href="" target="_blank">Blog</a>
         </li>
-    </ul>
-
-    <div id="imgContainer">
-        <img src="/DHBEER/img/aluguel-barril-de-chopp.jpg" alt="container1">
-        <img src="/DHBEER/img/pilsen-festival.jpg" alt="container2">
-    </div>
+        </ul>
         
     
-     <a href="https://wa.me/5511962744793" title="Whatsapp DH BEER" target="_blank"><img src="/img/whastapp.png" alt="Whatsapp DH BEER" class="btnwhats"></a>
-     <div class="pulse">.</div>
+        <a href="https://wa.me/5511962744793" title="Whatsapp DH BEER" target="_blank"><img src="/img/whastapp.png" alt="Whatsapp DH BEER" class="btnwhats"></a>
+        <div class="pulse">.</div>
     
-       
 
     <footer>
         <span>Desevolvido por </span>
     </footer>
-<script src="/DHBEER/script.js"></script>
+
     
     
 </body>
+
 </html>
