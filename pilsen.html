@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
     <title>DH Beer - Cervejaria Artesanal</title>
 </head>
@@ -17,14 +17,6 @@
 </header>
 
 <body>
-    <div class="popup" id="popup">
-        <h4>Para continuar navegando nesse site você deve ter mais de 18 anos. Você é maior de 18?</h4>
-        <div class="buttons">
-            <button onclick="fecharPopup()">SIM</button>
-            <button onclick="redirecionar()">NÃO</button>
-        </div>
-    </div>
-
     <ul class="menu-list">
         <li class="active">
             <a href="">A Cervejaria DH</a><li >
@@ -34,7 +26,7 @@
                       <a href="">Ipa    </a>
                       <a href="">Lager  </a>
                       <a href="">Amber  </a>
-                      <a href="/pilsen.html">Pilsen </a>
+                      <a href="">Pilsen </a>
                       <a href="">DhZero </a>
                       <a href="">Stout  </a>
                       <a href="">RedAle </a>
@@ -49,15 +41,37 @@
         <li><a href="" target="_blank">Blog</a></li>
     </ul>
 
-    <div class="carousel">
-        <div class="carousel-inner">
-          <img src="img/banner-aluguel-barril-de-chopp.jpg" alt="Imagem 1">
-          <img src="img/banner-banner-cervejaria.jpg" alt="Imagem 2">
-          <img src="img/banner-pilsen-festival.jpg" alt="Imagem 3">
+    <div class="img-produtos">
+        <div id="imgContainer" class="imgContainer">
+            <img src="img/PILSEN350.jpg" alt="ProdPilsen 1" width="500" height="500" >
+            <img src="img/PILSEN600.jpg" alt="ProdPilsen 2" width="500" height="500" >
+            <img src="img/PILSEN1L.jpg" alt="ProdPilsen 3" width="500" height="500" >
         </div>
-      </div>
+    </div>
+    
+    <div class="desc_prod"><h4>Cerveja Pilsen Puro Malte</h4>
+        
+        <br/>Uma cerveja tradicional alemã que se adapta perfeitamente ao paladar brasileiro. Elaborada com lúpulo da República Tcheca e malte Pilsen da Alemanha, esta cerveja é habilmente elaborada para garantir aroma e sabor suaves e sutis. O processo de fermentação é cuidadosamente controlado para garantir o equilíbrio perfeito entre amargor e doçura, resultando em uma cerveja refrescante e satisfatória, perfeita para qualquer ocasião. Feito com ingredientes de alta qualidade. Habilmente trabalhada para um sabor suave e sutil. Amargor e doçura perfeitamente equilibrados. Refrescante e satisfatório. Aprecie o sabor de uma cerveja tradicional alemã com um toque brasileiro. Perfeito para qualquer ocasião, desde uma noite casual até uma celebração especial. Feito com ingredientes de alta qualidade para um sabor premium. Habilmente trabalhada para garantir um sabor suave e sutil que certamente agradará até os bebedores de cerveja mais exigentes.</div>
+    <br/>
 
-      <div class="Estilos">
+    <button class="button" onclick="showProduct('355ml', 7.20, 'PILSEN350.jpg')">355ml</button>
+    <button class="button" onclick="showProduct('600ml', 13.60, 'PILSEN600.jpg')">600ml</button>
+    <button class="button" onclick="showProduct('1 litro', 18.30, 'PILSEN1L.jpg')">1 litro</button>
+
+
+    <div class="opt_qtd">
+        <label for="quantity">Quantidade:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="99" oninput="calculateTotal()">
+        <button onclick="calculateTotal(); openPopup()">Finalizar Compra</button>
+        </div>
+      <br/>
+      <div id="valor"></div>
+      <br/>
+      <div id="total"></div>
+
+      
+
+     <div class="Estilos" style="clear: both;">
         <h2 style="text-decoration: underline; margin-bottom: 50px;">Nossos Estilos</h2>
         <img src="img/min-ipa.png" alt="Min 1" width="100" height="100" style="margin-right: 55px;">
         <img src="img/min-pilsen.png" alt="Min 2" width="100" height="100" style="margin-right: 55px;">
@@ -68,11 +82,13 @@
         <img src="img/min-red.png" alt="Min 7" width="100" height="100" style="margin-right: 55px;">
         <img src="img/min-zero.png" alt="Min 8" width="100" height="100" style="margin-right: 55px;">
     </div>
+
       
     <a href="https://wa.me/5511962744793" title="Whatsapp DH BEER" target="_blank"><img src="/img/icon-whastapp.png"
             alt="Whatsapp DH BEER" class="btnwhats"></a>
     <div class="pulse">.</div>
 
+</body>
 
     <footer class="main_footer container">
 
@@ -123,6 +139,6 @@
 
 
 
-</body>
+
 
 </html>
