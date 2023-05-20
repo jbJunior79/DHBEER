@@ -9,7 +9,7 @@ header {
 }
 
 body {
-    background-color: black;
+    background-color: #ffffff;
 }
 
 .menu-list {
@@ -18,12 +18,50 @@ body {
     font-family: 'Verdana', sans-serif;
     font-size: 20px;
     margin-top: 60px;
-    margin-left: 300px;
+    margin-left: 250px;
     /*coloca o item mesmo estando na body no topo da página */
     position: absolute;
     top: 0;
     
 }
+
+/* botao menu de cervejas Inicio*/
+.mainmenu {  
+    color: rgb(79, 2, 114);
+    text-decoration-line: underline;
+    cursor: pointer;
+    padding:20px;
+    
+}
+
+.mainmenu:hover {
+    background-color: transparent;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 3;
+    width: 13vh;
+    display: none;
+    background: linear-gradient(30.15deg, #ffbf00 16.62%, #ffffff 85.61%)  ;
+    margin-left: 20px;
+}
+
+.submenu a{
+    text-transform:capitalize;
+    text-decoration: none;
+   color: black;
+}
+.dropdown:hover .submenu {
+    display: block;  
+}
+/* botao menu de cervejas Fim*/
+
 
 .carousel-item active {
     max-width: 1400px;
@@ -54,21 +92,14 @@ h1 {
 }
 
 h2 {
-    color: #c24729;
-    font-family: 'New Rocker', cursive;
+    color: #AA935f;
+    font-family: 'Verdana', sans-serif;
     font-size: 50px;
 }
 
 p {
     color: white
     
-}
-
-footer {
-    color: black;
-    background-color: #c24729;
-    font-family: 'New Rocker', cursive;
-    margin-top: 20px;
 }
 
 .bkheader {
@@ -134,6 +165,8 @@ footer {
 	background-color:#1a1a1a; 
 	color:#fff; 
 	font-size:0.875em; 
+    font-family:'Verdana', sans-serif;
+    
 }
 .main_footer .content { float:left; width:90%; margin:0 5%; padding: 5em 0; }
 .container { float:left; width:100%; }
@@ -142,25 +175,25 @@ footer {
 	height:auto; 
 	float:left; 
 	margin-bottom:2em;
-}
+    }
 .colfooter ul        { width:100%; float:left; }
 .colfooter ul li     { padding:0.2em 0em; }
 .colfooter ul li a   { text-decoration:none; color:#ffffff; font-size:1em; }
 .colfooter ul li a i { font-size:0.5em; }
 .colfooter ul li a:hover { text-decoration:underline; }
 .colfooter .titleFooter   { 
-	font-family:'open_sansregular'; 
+	font-family:'Verdana', sans-serif; 
 	font-size:1.3em; 
 	color:#ffffff; 
 	padding-bottom: 0.5em; 
 	margin-bottom:0.5em; 
-	border-bottom:1px #4ec0db solid;
+	border-bottom:1px #AA935f solid;
 }
-.colfooter p  { font-family:'open_sanslight'; color:#ffffff; font-size:1em; height:25px; } 
+.colfooter p  { font-family:'Verdana', sans-serif; color:#ffffff; font-size:1em; height:25px; } 
 .botao{
   padding: 10px 12px;
   color: #fff;
-  font-family: 'open_sansregular';
+  font-family: 'Verdana', sans-serif;
   letter-spacing:2px;
   text-align: center;
   position: relative;
@@ -177,7 +210,7 @@ footer {
   left: 0px;
   width: 100%;
   height: 1px;
-  background: #6098FF;
+  background: #AA935f;
   display: block;
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
@@ -215,7 +248,7 @@ footer {
 }
 .botao:hover{
     border: 1px solid #262626;
-    color: #2adee3!important;
+    color: #AA935f!important;
 }
 .botao::before {
     content: '';
@@ -243,7 +276,7 @@ footer {
     width: 0%;
     height: 100%;
     display: block;
-    background: #2adee3;
+    background: #AA935f;
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg); 
@@ -268,7 +301,7 @@ footer {
     width: 150%;
 }
 .main_footer_copy { background-color:#2e2e2e; width:100%; float:left; text-align:center; padding:1.5em 0em; }
-.main_footer_copy p { font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; }
+.main_footer_copy p { font-family:'Verdana', sans-serif; font-size:1em; color:#e1e0e0; height:20px; }
 .main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
 .main_footer_copy .by   { font-size:0.96em; }
 .main_footer_copy .by a       { color:#fff; text-decoration:none; }
@@ -284,3 +317,135 @@ footer {
 .icon-facebook {
     background-image: url("/DHBEER/img/facebook.png");
 }
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 300%;
+}
+
+.carousel-inner img {
+  flex: 0 0 33.3333%;
+  width: 100%;
+}
+
+.Estilos {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #03253E;
+    margin-bottom: 20px auto;
+}
+
+.img-produtos {
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+    margin-left: 100px;    
+}
+
+.desc_prod {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    margin-right: 200px;
+    margin-top: 50px;
+    font-size: 14px;
+    }
+
+h4 {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.button {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #03253E;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #e1e0e0;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .opt_qtd {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: -150px;
+    right: 603px;
+    font-family: Verdana, sans-serif;
+  }
+
+  label {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  label {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid #03253E;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #03253E;
+  }
+
+  #valor {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    
+  }
+
+  #total {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup2 .popup-container {
+    width: 500px;
+    height: 500px;
+  }
